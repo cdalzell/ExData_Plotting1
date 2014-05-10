@@ -29,8 +29,8 @@ with(df, {
   legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
          lty = 1, col = c("black", "red", "blue"))
   
-  # another new graph, this one related to Global_active_power
-  plot(DateTime, Global_reactive_power, type = "l",
+  # another new graph, this one related to Global_reactive_power
+  plot(DateTime, as.numeric(as.character(Global_reactive_power)), type = "l",
        xlab = "datetime", ylab = "Global_reactive_power")
 })
 
