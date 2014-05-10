@@ -16,7 +16,7 @@ with(df, {
        xlab = "", ylab = "Global Active Power")
   
   # this is a new graph, related to voltage
-  plot(DateTime, Voltage, type = "l", xlab = "datetime", ylab = "Voltage")
+  plot(DateTime, as.numeric(as.character(Voltage)), type = "l", xlab = "datetime", ylab = "Voltage")
   
   # plot 3
   plot(DateTime, as.numeric(as.character(Sub_metering_1)), type = "l",
